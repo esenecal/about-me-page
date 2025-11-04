@@ -1,0 +1,50 @@
+            body {
+                font-family: sans-serif;
+                background-color: slategray;
+                color: rgb(32, 32, 32);
+            }
+
+            main {
+                min-height: 75vh;
+            }
+
+            #button_div {
+                text-align: center;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            h2 {
+                color: rgb(0, 0, 0);
+            }
+
+            #introduction p {
+                background-color: lightgray;
+            }
+
+            #education div {
+                background-color: lightgray;
+            }
+
+            #interests p {
+                background-color: lightgray;
+            }
+
+            #experience p {
+                background-color: lightgray;
+            }
+
+            p {
+                padding: 10px 10px 10px 30px;
+            }
+
+            footer {
+                position: relative;
+                text-align: right;
+            }
+
+            strong {
+                color: lightcoral;
+            }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!--
+The page should have a title, a short introduction, and at least three sections. Each section should have
+a heading and between one and three short paragraphs. Potential sections are “Education”, “Interests”,
+“Hobbies”, “Experience”, “Family”, “Achievements”, “Religion”, etc.
+-->
+
+<!--use inline css...-->
+
+<html>
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>About Me</h1>
+            <p><script>document.write(new Date().toLocaleString())</script></p>
+        </header>
+
+        <main>
+            <div id = "introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to my introduction page! I hope that you learn something interesting. Have a good read!</p>
+            </div>
+
+            <div id="education">
+                <h2>Education</h2>
+
+                <div>
+                    <p>
+                        I graduated from high school in 2022. In high school, I focused on working 
+                        on my grades while also participating in the high school string orchestra and the robotics team, where I was a
+                        programmer.
+                    </p>
+                    <p>
+                        I began studying as a <strong>computer science</strong> major at Brigham Young University in the fall of 2022. That year, I focused on 
+                        accomplishing some GEs such as Statistics and American Heritage, while beginning on the entry-level CS courses, such 
+                        as CS 111 and CS 235 (Data Structures). My goal with CS was to gain a broad understanding and then focus on the 
+                        cybersecurity field. After a 2 year deferment to serve a mission, I decided to switch my major to <strong>cybersecurity</strong> 
+                        to more fully pursue my professional interests, and so in 2025, I enrolled in an entry level cybersecurity class while
+                        continuing to take some CS classes.
+                    </p>
+                </div>
+            </div>
+
+            <div id="interests">
+                <h2>Interests</h2>
+
+                <p>
+                    I enjoy music and participated in a string orchestra and a rock band in high school. I also have an interest in 
+                    computer science, of course, but especially cybersecurity and ethical hacking; this interest came when I was young 
+                    after reading several books by Kevin Mitnick. I also enjoy swimming, biking, and a little bit of hiking. I especially just enjoy spending time with peple and gettin 
+                    to know them more. <em>I also enjoy learning, though I do have a bit of a love-hate relationship with school at the moment.</em>
+                </p>
+            </div>
+
+            <div id="experience">
+                <h2>
+                    Experience
+                </h2>
+
+                <p>
+                    I have some CS experience from both high school and college. I was a programmer for a robotics team and gained
+                    experience working with other members of a team--electrical, mechanical, etc.--to build a product. As mentioned
+                    before, I have also taken several college CS classes. I also have other experiences that have taught me a lot;
+                    <strong>I served a mission for the Church of Jesus Christ of Latter-day Saints</strong> in 2023-2025, 
+                    which taught me a lot spiritually and about serving others.
+                </p>
+            </div>
+
+            <div id="button_div">
+                <button type="button" onclick="buttonClicked()">Don't Click Me</button>
+            </div>
+            
+        </main>
+
+        <footer>
+            <h4>Thanks for reading!</h4>
+        </footer>
+
+        <script>
+            function buttonClicked() {
+                const all = document.querySelector("html");
+                const childAll = all.children
+
+                all.style.color = "black";
+                all.style.backgroundColor = "black";
+                
+                for (const node of childAll) {
+                    node.style.color = "black";
+                    node.style.backgroundColor = "black";
+                }
+
+                const paragraphs = document.querySelectorAll("p");
+                for (const node of paragraphs) {
+                    node.style.color = "black";
+                    node.style.backgroundColor = "black";
+                }
+
+                setTimeout(() => alert("What have you done."), 0);
+            }
+        </script>
+    </body>
+    
+</html>
